@@ -1,29 +1,44 @@
-Laravel Locale
+# Laravel Locale
 
-A simple and robust package for URL-based locale handling in Laravel. It detects, validates, and manages locale segments (e.g., /en, /tr) in the request URL, with support for session storage, normalization, and middleware-based localization.
+Elegant URL-Based Localization for Laravel Applications
 
-Installation
+**Laravel Locale** is a simple yet powerful package for handling localization through URL segments in Laravel. It detects, validates, and manages locale slugs (e.g., `/en`, `/tr`) in the request path, with seamless support for session storage, normalization, and middleware-based behavior.
+
+---
+
+## 🚀 Installation
 
 Install via Composer:
 
+```bash
 composer require laraveledge/laravel-locale
+```
 
-Configuration
+---
+
+## ⚙️ Configuration
 
 Publish the configuration file:
 
+```bash
 php artisan vendor:publish --tag=laravel-locale-config
+```
 
-This will publish config/locale.php, where you can define supported locales:
+This will publish `config/locale.php`, where you can specify your supported locales:
 
+```php
 return [
     'supported_locales' => ['en', 'tr', 'ur'],
 ];
+```
 
-Usage
+---
 
-Wrap your localized routes with middleware and a {locale} prefix:
+## 🧩 Usage
 
+Wrap your localized routes using middleware and a `{locale}` prefix:
+
+```php
 use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
 use Laraveledge\LaravelLocale\Middleware\SetLocale;
 use Laraveledge\LaravelLocale\Middleware\SetDefaultLocaleForUrls;
@@ -40,21 +55,21 @@ Route::group([
     Route::get('/', fn () => 'Home Page')->name('home');
     Route::get('/about', fn () => 'About Page');
 });
+```
 
-The package will:
+### ✅ What This Package Does
 
-Detect and validate the locale segment
+* ✅ Detects and validates the locale segment in the URL
+* 🔠 Normalizes casing (e.g., `EN-us` → `en`)
+* 💾 Stores the selected locale in session
+* 🌍 Calls `App::setLocale(...)`
+* 🔁 Redirects to localized URLs if missing or invalid
 
-Normalize casing (e.g., EN-us → en)
+---
 
-Store the locale in session
+## 📁 Folder Structure
 
-Apply App::setLocale(...)
-
-Redirect to localized URLs if missing or invalid
-
-Folder Structure
-
+```
 src/
 ├── Config/
 │   └── locale.php
@@ -67,14 +82,17 @@ src/
 ├── Facades/
 │   └── Locale.php (optional)
 └── LaravelLocaleServiceProvider.php
+```
 
-Requirements
+---
 
-PHP 8.1+
+## ✅ Requirements
 
-Laravel 10+
+* PHP 8.1+
+* Laravel 10+
 
-License
+---
+
+## 📄 License
 
 This package is open-source and released under the MIT License.
-
