@@ -134,7 +134,6 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
     );
     $middleware->alias([
             'ensureIsLocale' => EnsureIsLocale::class,
-            'redirectMissingLocale' => RedirectMissingLocale::class,
             'setDefaultUrls' => SetDefaultLocaleForUrls::class,
             'setLocale' => SetLocale::class,
     ]);
