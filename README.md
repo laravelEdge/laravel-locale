@@ -1,6 +1,6 @@
 # Laravel Locale
 
-Elegant URL-Based Localization for Laravel Applications
+Elegant URL-Based Localization for Laravel Applications 
 
 **Laravel Locale** is a simple yet powerful package for handling localization through URL segments in Laravel. It detects, validates, and manages locale slugs (e.g., `/en`, `/tr`) in the request path, with seamless support for session storage, normalization, and middleware-based behavior.
 
