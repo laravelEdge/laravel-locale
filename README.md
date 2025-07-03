@@ -55,8 +55,8 @@ return [
 Wrap your localized routes using middleware and a `{locale}` prefix:
 
 ```php
-use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
 use Laraveledge\LaravelLocale\Middleware\SetLocale;
+use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
 use Laraveledge\LaravelLocale\Middleware\SetDefaultLocaleForUrls;
 
 Route::group([
@@ -87,8 +87,8 @@ Now visit `/`, `/about`, or `/test` to be redirected to the localized versions.
 You can also register aliases in `bootstrap/app.php` to avoid referencing class paths directly:
 
 ```php
-use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
 use Laraveledge\LaravelLocale\Middleware\SetLocale;
+use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
 use Laraveledge\LaravelLocale\Middleware\SetDefaultLocaleForUrls;
 
 ->withMiddleware(function (Middleware $middleware): void {
@@ -122,10 +122,10 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 ```php
 bootstrap/app.php:
 
-use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
-use Laraveledge\LaravelLocale\Middleware\SetLocale;
-use Laraveledge\LaravelLocale\Middleware\SetDefaultLocaleForUrls;
 use Illuminate\Routing\Middleware\SubstituteBindings;
+use Laraveledge\LaravelLocale\Middleware\SetLocale;
+use Laraveledge\LaravelLocale\Middleware\EnsureIsLocale;
+use Laraveledge\LaravelLocale\Middleware\SetDefaultLocaleForUrls;
 
    ->withMiddleware(function (Middleware $middleware): void {
      $middleware->prependToPriorityList(
