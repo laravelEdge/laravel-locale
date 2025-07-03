@@ -1,7 +1,9 @@
 <?php 
+namespace Laraveledge\LaravelLocale\Middleware;
 
-use LocaleService;
+use Closure;
 use Illuminate\Http\Request;
+use Laraveledge\Services\LocaleService;
 use Symfony\Component\HttpFoundation\Response;
 
 class EnsureIsLocale

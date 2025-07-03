@@ -1,5 +1,7 @@
 <?php 
 
+namespace Laraveledge\Services;
+
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;

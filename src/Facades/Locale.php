@@ -1,7 +1,7 @@
 <?php
 
-use LocaleService;
 use Illuminate\Support\Facades\Facade;
+use Laraveledge\Services\LocaleService;
 
 class Locale extends Facade
 {

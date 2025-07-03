@@ -1,8 +1,11 @@
 <?php
 
+namespace Laraveledge\LaravelLocale\Middleware;
+
 use Closure;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Config;
+use Laraveledge\Services\LocaleService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
