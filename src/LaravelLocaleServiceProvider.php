@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveledge\LaravelLocale;
+namespace Laraveledge;
 
 use Illuminate\Support\ServiceProvider;
 
