@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Laraveledge\\LaravelLocale\\LaravelLocaleServiceProvider"
+                "Laraveledge\\LaravelLocaleServiceProvider"
             ]
         }
     }
