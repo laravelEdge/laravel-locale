@@ -1,12 +1,24 @@
 {
     "name": "laraveledge/laravel-locale",
     "description": "Elegant URL-based locale handler and middleware for Laravel.",
+    "keywords": [
+        "php",
+        "laravel",
+        "localization",
+        "locale",
+        "language",
+        "country",
+        "routes",
+        "routing",
+        "translation"
+    ],
     "type": "library",
     "require": {
-        "illuminate/support": "^10.0",
-        "illuminate/http": "^10.0",
-        "illuminate/routing": "^10.0",
-        "illuminate/session": "^10.0"
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0",
+        "illuminate/routing": "^10.0|^11.0",
+        "illuminate/session": "^10.0|^11.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0"
@@ -23,5 +35,12 @@
             "email": "shery.codes@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraveledge\\LaravelLocale\\LaravelLocaleServiceProvider"
+            ]
+        }
+    }
 }
