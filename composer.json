@@ -26,7 +26,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Laraveledge\\": "src/"
+             "Laraveledge\\LaravelLocale\\": "src/"
         }
     },
     "authors": [
@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Laraveledge\\LaravelLocaleServiceProvider"
+                "Laraveledge\\LaravelLocale\\LaravelLocaleServiceProvider"
             ]
         }
     }

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Laraveledge\Services;
+namespace Laraveledge\LaravelLocale\Services;
 
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;

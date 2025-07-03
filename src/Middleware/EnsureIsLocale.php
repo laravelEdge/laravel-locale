@@ -3,8 +3,8 @@ namespace Laraveledge\LaravelLocale\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Laraveledge\Services\LocaleService;
 use Symfony\Component\HttpFoundation\Response;
+use Laraveledge\LaravelLocale\Services\LocaleService;
 
 class EnsureIsLocale
 {

@@ -1,7 +1,9 @@
 <?php
 
+namespace Laraveledge\LaravelLocale\Facades;
+
 use Illuminate\Support\Facades\Facade;
-use Laraveledge\Services\LocaleService;
+use Laraveledge\LaravelLocale\Services\LocaleService;
 
 class Locale extends Facade
 {
